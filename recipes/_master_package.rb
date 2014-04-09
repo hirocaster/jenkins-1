@@ -26,7 +26,7 @@ when 'debian'
   include_recipe 'apt::default'
 
   apt_repository 'jenkins' do
-    uri          'http://pkg.jenkins-ci.org/debian'
+    uri          'http://pkg.jenkins-ci.org/debian-stable'
     distribution 'binary/'
     key          'http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key'
   end
